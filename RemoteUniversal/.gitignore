@@ -1,0 +1,315 @@
+# ===========================================
+# RemoteUniversal - .gitignore Configuration
+# ===========================================
+# Configuration complète pour React Native + Expo + TypeScript
+# Auteur: Jean Elie
+# Date: 2025
+
+# ===========================================
+# DÉPENDANCES ET PACKAGES
+# ===========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===========================================
+# EXPO ET REACT NATIVE
+# ===========================================
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Expo Application Services (EAS)
+.easignore
+
+# React Native
+# Generated native folders (when using bare workflow)
+/ios/
+/android/
+
+# Metro bundler
+.metro-health-check*
+.metro-cache/
+
+# ===========================================
+# TYPESCRIPT
+# ===========================================
+# TypeScript build info
+*.tsbuildinfo
+
+# TypeScript cache
+.tscache/
+
+# ===========================================
+# TESTS ET COUVERTURE
+# ===========================================
+# Jest
+coverage/
+.nyc_output/
+
+# Test results
+test-results/
+playwright-report/
+test-results.xml
+
+# ===========================================
+# ENVIRONNEMENT ET CONFIGURATION
+# ===========================================
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Configuration files with sensitive data
+config/local.json
+config/production.json
+config/development.json
+
+# ===========================================
+# BUILD ET DISTRIBUTION
+# ===========================================
+# Build outputs
+build/
+dist/
+out/
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+local.properties
+*.keystore
+!debug.keystore
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+project.xcworkspace/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# ===========================================
+# SYSTÈME D'EXPLOITATION
+# ===========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# ÉDITEURS ET IDEs
+# ===========================================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# JetBrains IDEs
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===========================================
+# LOGS ET DEBUG
+# ===========================================
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ===========================================
+# SÉCURITÉ ET CLÉS
+# ===========================================
+# Certificates and keys
+*.pem
+*.p8
+*.p12
+*.key
+*.jks
+*.keystore
+!debug.keystore
+*.mobileprovision
+*.cer
+*.crt
+*.der
+
+# ===========================================
+# CACHE ET TEMPORAIRE
+# ===========================================
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Temporary folders
+tmp/
+temp/
+
+# ===========================================
+# DOCUMENTATION GÉNÉRÉE
+# ===========================================
+# Generated documentation
+docs/generated/
+docs/build/
+
+# ===========================================
+# OUTILS DE DÉVELOPPEMENT
+# ===========================================
+# ESLint
+.eslintcache
+
+# Prettier
+.prettiercache
+
+# Stylelint
+.stylelintcache
+
+# ===========================================
+# SPÉCIFIQUE AU PROJET
+# ===========================================
+# Fichiers de configuration locaux
+config/local/
+secrets/
+
+# Fichiers de test avec données sensibles
+test-data/sensitive/
+
+# Fichiers de backup
+*.backup
+*.bak
+*.tmp
+
+# ===========================================
+# EAS BUILD
+# ===========================================
+# EAS Build artifacts
+.easignore
+
+# ===========================================
+# FIREBASE (si utilisé)
+# ===========================================
+# Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+
+# ===========================================
+# DETOX (E2E Testing)
+# ===========================================
+# Detox
+.detoxrc.json
+detox/
+
+# ===========================================
+# FLIPPER (Debugging)
+# ===========================================
+# Flipper
+ios/Pods/Flipper*
+android/app/src/debug/java/com/remoteuniversal/ReactNativeFlipper.java
